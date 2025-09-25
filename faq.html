@@ -1,0 +1,250 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 15px;
+    }
+
+    .logo-judul {
+      display: flex;
+      align-items: center;
+      gap: 10px; 
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 17px;
+    }
+
+    .judul {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .faq-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .faq-title {
+      display: inline-block;
+      background-color:#95E6FF; 
+      padding: 10px 35px;
+      border-radius: 30px; 
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .faq-subtitle {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .faq-box {
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .accordion-item {
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .accordion-button {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-judul">
+        <img src="Smkn1bwi-removebg-preview.png" alt="logo">
+        <h1 class="judul">Perpustakaan</h1>
+      </div>
+      <ul>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Syarat</a></li>
+        <li><a href="#">Berita</a></li>
+        <li><a href="#">Faq</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Question</h2>
+    <p class="faq-subtitle">9 Pertanyaan yang sering diajukan terkait layanan dan fasilitas Perpustakaan</p>
+  </section>
+
+  <div class="faq-container">
+
+    <!-- Accordion1 -->
+    <div class="faq-box mx-auto">
+      <div class="accordion" id="accordionGroup1">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1a" aria-expanded="true">
+              Apa fungsi utama Perpustakaan sekolah?
+            </button>
+          </h2>
+          <div id="q1a" class="accordion-collapse collapse show" data-bs-parent="#accordionGroup1">
+            <div class="accordion-body">
+              Perpustakaan sekolah berfungsi sebagai pusat sumber belajar yang menyediakan berbagai koleksi buku dan referensi untuk menunjang kegiatan belajar mengajar. Selain itu, perpustakaan juga berperan menumbuhkan minat baca, meningkatkan wawasan siswa, serta menjadi ruang yang nyaman untuk belajar mandiri, diskusi kelompok, maupun kegiatan literasi lainnya.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2a">
+              Bagaimana cara meminjam buku di Perpustakaan?
+            </button>
+          </h2>
+          <div id="q2a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup1">
+            <div class="accordion-body">
+              Untuk meminjam buku, siswa harus membawa kartu pelajar atau kartu anggota perpustakaan. Proses peminjaman dilakukan dengan mencatat judul buku pada sistem pencatatan perpustakaan (manual maupun komputerisasi) dan disahkan oleh petugas. Setelah itu, buku bisa dibawa pulang sesuai dengan aturan waktu peminjaman.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3a">
+              Berapa lama waktu peminjaman buku?
+            </button>
+          </h2>
+          <div id="q3a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup1">
+            <div class="accordion-body">
+              Waktu peminjaman buku biasanya ditetapkan antara 7–14 hari. Jika siswa membutuhkan waktu lebih lama, maka bisa mengajukan perpanjangan peminjaman. Lama waktu pinjam bisa berbeda tergantung pada jenis koleksi buku (buku pelajaran, referensi, atau fiksi).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion2 -->
+    <div class="faq-box mx-auto">
+      <div class="accordion" id="accordionGroup2">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q4a">
+              Apakah buku bisa diperpanjang masa pinjamnya?
+            </button>
+          </h2>
+          <div id="q4a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup2">
+            <div class="accordion-body">
+             Ya, buku bisa diperpanjang selama 1–2 kali perpanjangan, dengan syarat buku tersebut tidak sedang dipesan atau dipinjam oleh orang lain. Perpanjangan dapat dilakukan langsung ke petugas perpustakaan dengan membawa buku yang ingin diperpanjang.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5a">
+             Apa yang terjadi jika buku hilang atau rusak?
+            </button>
+          </h2>
+          <div id="q5a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup2">
+            <div class="accordion-body">
+              Jika buku hilang atau rusak, maka siswa wajib mengganti dengan buku yang sama atau dengan buku lain yang nilainya setara sesuai kebijakan perpustakaan. Jika kerusakan ringan, siswa bisa diminta untuk memperbaiki buku atau membayar denda perbaikan.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6a">
+              Apakah ada denda jika terlambat mengembalikan buku?
+            </button>
+          </h2>
+          <div id="q6a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup2">
+            <div class="accordion-body">
+              Ya, setiap keterlambatan biasanya dikenakan denda harian. Besarnya denda ditentukan oleh kebijakan sekolah, misalnya Rp500 – Rp1.000 per hari. Jika keterlambatan terlalu lama, siswa bisa kehilangan hak untuk meminjam buku sampai denda dilunasi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion3 -->
+    <div class="faq-box mx-auto">
+      <div class="accordion" id="accordionGroup3">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q7a">
+             Berapa jumlah buku yang boleh dipinjam?
+            </button>
+          </h2>
+          <div id="q7a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup3">
+            <div class="accordion-body">
+              Setiap siswa biasanya boleh meminjam maksimal 2–3 buku sekaligus. Jumlah ini ditetapkan agar koleksi buku bisa digunakan oleh banyak siswa secara bergantian.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8a">
+              Apakah perpustakaan menyediakan e-book atau koleksi digital?
+            </button>
+          </h2>
+          <div id="q8a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup3">
+            <div class="accordion-body">
+              Beberapa perpustakaan sekolah sudah memiliki koleksi digital berupa e-book, jurnal online, atau database pendidikan yang bisa diakses melalui komputer perpustakaan, website sekolah, atau aplikasi khusus. Hal ini memudahkan siswa untuk belajar dari mana saja tanpa harus selalu datang ke perpustakaan.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q9a">
+              Apakah perpustakaan hanya untuk meminjam buku?
+            </button>
+          </h2>
+          <div id="q9a" class="accordion-collapse collapse" data-bs-parent="#accordionGroup3">
+            <div class="accordion-body">
+              Tidak. Perpustakaan bukan hanya tempat meminjam buku, tetapi juga ruang untuk belajar, mencari referensi, berdiskusi, mengerjakan tugas, mengakses informasi, hingga mengembangkan minat bakat literasi. Bahkan, beberapa perpustakaan juga rutin mengadakan kegiatan seperti lomba membaca, pelatihan literasi digital, bedah buku, hingga bimbingan belajar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 15px;
+    }
+
+    .logo-judul {
+      display: flex;
+      align-items: center;
+      gap: 10px; 
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 17px;
+    }
+
+    .judul {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .faq-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .faq-title {
+      display: inline-block;
+      background-color: #b3ecff; 
+      padding: 10px 35px;
+      border-radius: 30px; 
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .faq-subtitle {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .faq-box {
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .accordion-item {
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .accordion-button {
+      width: 100%;
+    }
